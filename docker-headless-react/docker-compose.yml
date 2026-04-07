@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        VITE_WP_API_BASE: http://host.docker.internal:8888/lemonade-stand
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=production
+      - VITE_WP_API_BASE=http://host.docker.internal:8888/lemonade-stand
+    container_name: docker-headless-react
