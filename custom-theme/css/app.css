@@ -1,0 +1,13 @@
+body {
+  background-color: yellow;
+}
+
+h1 {
+  color: rgb(52, 52, 207);
+}
+
+.post {
+  background-color: rgb(243, 243, 115);
+  padding: 16px;
+  margin: 10px 0px;
+}
